@@ -42,3 +42,4 @@
     - const id = shortid.generate();
 7)Add Axios for HTTP-requests: npm install axios
 8) Install React-Router-DOM: npm install react-router-dom
+9) Установить библиотеку React-Loadable - сильно упрощает разделение компонентно-ориентированого кода: npm i react-loadable

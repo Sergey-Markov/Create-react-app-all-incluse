@@ -43,3 +43,10 @@
 7)Add Axios for HTTP-requests: npm install axios
 8) Install React-Router-DOM: npm install react-router-dom
 9) Установить библиотеку React-Loadable - сильно упрощает разделение компонентно-ориентированого кода: npm i react-loadable
+10) Библиотека для всплывающих уведомлений - npm i react-toastify
+11) Библиотека иконок - npm i react-icons
+12) Библиотека для лоадеров,Спинеров 
+      -  npm install react-loader-spinner --save
+      - import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+      - import Loader from "react-loader-spinner";
+

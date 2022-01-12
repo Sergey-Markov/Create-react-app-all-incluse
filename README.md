@@ -1,6 +1,7 @@
 # Create-react-app-all-incluse
 1)git clone - клонируем созданный репо;
 2)npx create-react-app . - создаем наше приложение в нужной дериктории;
+  2.1) если возникли проблеммы - npm init -> npm i react-create-app -> npx create-react-app .
 3)Инициализация lint-staged и husky:
 - npm install --save-dev prettier eslint;
 - npx mrm@2 lint-staged;

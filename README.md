@@ -110,3 +110,31 @@
 }
 </p>
 
+<h1>useInterval</h1>
+
+<p> import { useEffect, useRef } from "react";
+
+export function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  // Remember the latest callback.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+}</p>
+
+<h2>usage</h2>
+<p>useInterval(() => {
+    setDate(dateBuilder());
+  }, 20000);</p>
